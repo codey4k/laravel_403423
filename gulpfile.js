@@ -3,7 +3,7 @@ const gulp = require('gulp'),
 
 const routes = {
     input : 'resources/assets/sass/app.scss',
-    output : 'public/css'
+    output : 'resources/views/css'
 }
 
 

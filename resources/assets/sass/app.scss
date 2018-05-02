@@ -1,4 +1,11 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+* {
+    margin : 0;
+    padding : 0;
+    outline : none;
+    border : none;
+    box-sizing : border-box;
+    transition : all .6;
+}
 
 body {
     min-height : 100vh;
