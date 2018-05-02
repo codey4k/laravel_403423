@@ -1,5 +1,5 @@
 @extends('layout')
 
 @section('content')
-    <h2>Hello world</h1>
+    <h2>Happy hacking!</h1>
 @stop

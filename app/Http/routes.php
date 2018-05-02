@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Pages@index');
 
-Route::get('/contact', function(){
-    return 'Contact route';
-});
+Route::get('/contact', 'Pages@contact');
