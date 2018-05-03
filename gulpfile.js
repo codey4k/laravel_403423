@@ -1,15 +1,17 @@
 const gulp = require('gulp'),
-    sass = require('gulp-sass')
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer');
 
 const routes = {
     input : 'resources/assets/sass/app.scss',
-    output : 'resources/views/css'
+    output : 'public/css'
 }
 
 
 gulp.task('sass', function(){
     gulp.src(routes.input)
         .pipe(sass())
+        .pipe(autoprefixer())
         .pipe(gulp.dest(routes.output))
 })
 
