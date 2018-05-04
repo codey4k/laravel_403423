@@ -5,13 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./css/app.css" type="text/css" />
-        <title>App - Laravel</title>
+        <title>Laravel</title>
     </head>
     <body>
         <div class="wrap">
-            <header class="header">
-                <h1>Hello</h1>
-            </header>
+            <!--@include('components/header', ['title' => 'Welcome'])-->
             
             @yield('content')
         </div>
