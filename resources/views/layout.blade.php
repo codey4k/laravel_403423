@@ -9,6 +9,10 @@
     </head>
     <body>
         <div class="wrap">
+            <header class="header">
+                <h1>Hello</h1>
+            </header>
+            
             @yield('content')
         </div>
     </body>
