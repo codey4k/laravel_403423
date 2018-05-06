@@ -5,5 +5,7 @@
 @section('content')
 
     @include('components/header', ['title' => 'Welcome'])
-
+    
+    @include('components/footer')
+    
 @stop
