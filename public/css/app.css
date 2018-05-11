@@ -6,6 +6,9 @@
   box-sizing: border-box;
   transition: all .6; }
 
+li, ol, ul {
+  list-style: none; }
+
 :root {
   --white: #eee; }
 
@@ -44,11 +47,20 @@ body {
   justify-content: center; }
 
 .menu {
+  position: fixed;
   width: 100%;
   height: 80px;
   background: tomato;
-  display: flex; }
+  display: flex;
+  z-index: 1000; }
   .menu__container {
     margin: auto;
     width: 80%;
-    height: 50%; }
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .menu__nav {
+    display: inline-flex; }
+  .menu__item {
+    margin: .5em; }
