@@ -12,6 +12,7 @@ li, ol, ul {
 }
 
 :root {
+    --theme : orange;
     --white : #eee;
 }
 
@@ -63,7 +64,7 @@ body {
     position : fixed;
     width : 100%;
     height : 80px;
-    background : tomato;
+    background : var(--theme);
     display : flex;
     z-index : 1000;
     
@@ -85,5 +86,21 @@ body {
     
     &__item {
         margin : .5em;
+    }
+}
+
+.footer {
+    width : 100%;
+    height : 150px;
+    background : #444;
+    display : flex;
+    
+    &__copyright {
+        margin : auto;
+        color : #eee;
+        
+        span {
+            color : var(--theme);
+        }
     }
 }
